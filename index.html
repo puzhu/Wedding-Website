@@ -5,105 +5,131 @@
     <title>Sami & Hari</title>
     <link rel="stylesheet" href="libraries/bootstrap-3.3.5-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="libraries/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="libraries/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+
   </head>
   <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-
-       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-
-        <a class="navbar-brand text-muted" href="#">Sami &amp; Hari's wedding(s)</a>
-        <div class="collapse navbar-collapse">
-
-          <ul class="nav navbar-nav navbar-right" role="tablist">
-            <li role="presentation" class="active"><a href='#home' aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-            <li class='dropdown'><a data-toggle='dropdown' class="dropdown-toggle" data-target='#'>New York<b class='caret'></b></a>
-              <ul class='dropdown-menu'>
-                <li role="presentation" class='dropdowns'><a href='#nyEvents' aria-cotntrols="nyEvents" role="tab" data-toggle="tab">Events</a></li>
-                <li role="presentation" class='dropdowns'><a href='#nyTravelAndStay' aria-controls="nyTravelAndStay" role="tab" data-toggle="tab">Travel &amp; Stay</a></li>
-                <li role="presentation" class='dropdowns'><a href='#nyTodo' aria-controls="nyTodo" role="tab" data-toggle="tab">Things to do</a></li>
+      <div class='container col-md-3 col-md-offset-1'>
+          <div class='row hidden-xs text-center' id='nameDiv'>
+            <h1 id ='names'>Sami & Hari</h1>
+            <h2 id='weddingDates'>Sept. 24, 2016, NY</h2>
+            <h2 id='weddingDates'>Dec. 27-31, 2016, Kerala</h2>
+          </div>
+          <div class="sidebar-nav">
+          <div class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <span class="visible-xs navbar-brand" id ='namesBrand'>Sami & Hari</span>
+            </div>
+            <div class="navbar-collapse collapse sidebar-navbar-collapse" role="tablist">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown">New York <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#nyEvents" aria-controls="nyEvents" role="tab" data-toggle="tab">Events</a></li>
+                    <li><a href="#nyTravelAndStay" aria-controls="nyTravelAndStay" role="tab" data-toggle="tab">Travel &amp; Stay</a></li>
+                    <li><a href="#nyTodo" aria-controls="nyTodo" role="tab" data-toggle="tab">Things to do</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kerala <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#keralaEvents" href="#keralaEvents" aria-controls="keralaEvents" role="tab" data-toggle="tab">Events</a></li>
+                    <li><a href="#keralaTravelAndStay" href="#keralaTravelAndStay" aria-controls="keralaTravelAndStay" role="tab" data-toggle="tab">Travel &amp; Stay</a></li>
+                    <li><a href="#keralaTodo" href="#keralaTodo" aria-controls="keralaTodo" role="tab" data-toggle="tab">Things to do</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#registry" aria-controls="registry" role="tab" data-toggle="tab">Registry</a>
+                </li>
               </ul>
-            </li>
-            <li class='dropdown'><a data-toggle='dropdown' class="dropdown-toggle" data-target='#'>Kerala<b class='caret'></b></a>
-              <ul class='dropdown-menu'>
-                <li role="presentation" class='dropdowns'><a href='#keralaEvents' aria-cotntrols="keralaEvents" role="tab" data-toggle="tab">Events</a></li>
-                <li role="presentation" class='dropdowns'><a href='#keralaTravelAndStay' aria-controls="keralaTravelAndStay" role="tab" data-toggle="tab">Travel &amp; Stay</a></li>
-                <li role="presentation" class='dropdowns'><a href='#keralaTodo' aria-controls="keralaTodo" role="tab" data-toggle="tab">Things to do</a></li>
-              </ul>
-            </li>
-          </ul>
+            </div><!--/.nav-collapse -->
+          </div>
         </div>
       </div>
-    </div>
+
 
     <div class="tab-content">
-      <div role="tabpanel" class="tab-pane fade in active container col-sm-6 col-md-offset-1" id="home">
+      <div role="tabpanel" class="tab-pane fade in active container col-sm-8" id="home"></div>
+      <div role="tabpanel" class="tab-pane container col-md-8 fade" id="nyEvents">
         <div class='jumbotron col-sm-9'>
-          <h2>Sami &amp; Hari</h2>
-          <p><small>Sept 24th, 2016 in NY and Dec 27-31st in Kerala, India</small></p>
-          <p class='lead'>Please use the New York tab to book your accomodation for New York as soon as possible! The wedding is in peak season, and there are limited places to stay in the area. Details on India to follow.</p>
+          <p>We are having a daytime wedding on Saturday, 9/24, with an optional (but highly recommended) after-party that same night.</p>
+          <h3>The Wedding</h3>
+          <p>The ceremony and reception will start at 11:30 AM and end in the late afternoon (around 4:30 PM). The wedding venue is open to public so, guests can stay on the venue for a few more hours and soak in the Hudson river views if they wish to do so.</p>
+          <h3>After-Partaay</h3>
+          <p>We will be holding a chill backyard party starting 7:30 PM in Rhinebeck, NY with homemade beer, pizza, s'mores, bonfires, whiskey shots and dancing.</p>
         </div>
       </div>
+      <div role="tabpanel" class="tab-pane container col-md-8 fade" id="nyTravelAndStay">
+        <div class='jumbotron col-sm-9'>
+          <h3>Accomodation</h3>
+          <p>We did not reserve hotel blocks, because all of them had 2-night requirements and were prohibitively expensive. We recommend using <a href='http://www.airbnb.com' target="_blank">airbnb</a>, <a href='http://www.homeaway.com' target="_blank">homeaway</a>, or <a href='http://www.vrbo.com' target="_blank">vrbo</a> to book inexpensive accomodation in any of the following locations: Tivoli, Rhinebeck, Annandale-on-Hudson, Clermont, Barrytown, Red Hook, Livingston, and Hudson</p>
+          <p>AirBnb has a beautiful rustic barn, a refurbished chicken coop, and a yurt, among more traditional options.</p>
+          <p>Feel free to check in with us for advice on where to stay.</p>
+          <h3>Travel to Clermont</h3>
+          <p><a href="https://www.google.co.in/maps/place/Clermont+State+Historic+Site/@42.085894,-73.9279997,15z/data=!4m2!3m1!1s0x0000000000000000:0x42b78aff009368d4" target="_blank">The Clermont Historic Site</a> is a 2 hour drive from Manhattan via the I-87 N. There is ample parking available at the wedding venue for all who are driving in. We will update this space with further details on local taxi services in case anyone needs them.</p>
+          <h3>Travel to the After Partaaay</h3>
+          <p>The after party will be at <a href="https://www.google.com/maps/place/111+Burger+Rd,+Rhinebeck,+NY+12572/@41.916732,-73.9063655,14z/data=!4m2!3m1!1s0x89dd0cff88407ba5:0xeb3c9810d81490ec" target="_blank">111 Burger Rd. in Rhinebeck, NY</a>. The house is between a 30 to 5 minute drive from all locations suggested for accomodation. And has ample parking.</p>
 
-      <div role="tabpanel" class="tab-pane container col-sm-6 col-md-offset-1 fade" id='nyEvents'>
-        <div class='jumbotron'>
-          <h2>Events</h2>
+        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane container col-md-8 fade" id="nyTodo">
+        <div class='jumbotron col-sm-9'>
+          <h2>Things to do in NY</h2>
+          <p>Hudson Valley has something for everyone -- hiking, antiquing, sculpture gardens, spas, and plenty of food. Here are a few places to visit on your way up or down:</p>
+          <p><a href='http://stormking.org/' target="_blank">Storm King Art Center:</a> Iconic outdoor sculpture museum in New Windsor, NY. You could spend hours here. It's far from the venue, but a good stop on the way up.</p>
+          <p><a href='http://www.atlantickayaktours.com/' target="_blank">Atlantic Kayak Tours:</a> Go for a ride on the Hudson River!</p>
+          <p><a href='http://www.hudsonvalleywinecountry.org/' target="_blank">Drink wine!</a> The Hudson Valley region is home to a number of wineries.</p>
+          <p><a href='http://hikethehudsonvalley.com/' target="_blank">Hike!</a> Use the link to access information on all of the great hikes in the Hudson Valley.</p>
+          <p>Wander through adorable towns. Hudson, 20 minutes north of the wedding venue, has great food, fun stores, and a cool bar/music venue called Helsinki Hudson. You can also check out the food struck scene. If you're up for a little more of a drive, you're only about 30 minutes away from Woodstock. Relive your youth, or, if you couldn't possibly have been there, put on your best flower crown and brush up on Jimi.</p>
+        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane container col-md-8 fade" id="keralaEvents">
+        <div class='jumbotron col-sm-9'>
+          <h3>The Wedding, Dec - 27th </h3>
+          <p>The wedding ceremony will start at 11:30 AM and will end in early afternoon at Vaikom</p>
+          <h3>Reception, Dec - 30th</h3>
+          <p>An evening reception will start at 6:00 PM in Trivandrum</p>
+        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane container col-md-8 fade" id="keralaTravelAndStay">
+        <div class='jumbotron col-sm-9'>
+          <h3>Accomodation</h3>
           <p>Coming Soon!</p>
         </div>
       </div>
-
-      <div role="tabpanel" class="tab-pane container col-sm-6 col-md-offset-1 fade" id='nyTravelAndStay'>
-        <div class='row'>
-          <div class='col-md-6 regularContent'>
-            <h3>Accomodation near Germantown</h3>
-            <p>Our wedding is in the height of the fall season in a beautiful part of Hudson Valley, so accommodations fill up quickly. We are having a daytime wedding on Saturday, 9/24, with an optional (but recommended) bonfire Saturday night. We did not reserve hotel blocks, because all of them had 2-night requirements and were prohibitively expensive. We recommend using <a href='http://www.airbnb.com' target="_blank">airbnb</a>, <a href='http://www.homeaway.com' target="_blank">homeaway</a>, or <a href='http://www.vrbo.com' target="_blank">vrbo</a> to book inexpensive accomodation in any of the following locations: Tivoli, Rhinebeck, Annandale-on-Hudson, Clermont, Barry, Red Hook, Livingston,  and Hudson</p>
-            <p>AirBnb has a beautiful rustic barn, a refurbished chicken coop, and a yurt, among more traditional options.</p>
-            <p>Feel free to check in with us for advice on where to stay.</p>
-          </div>
-          <div class='col-md-5 col-md-offset-1 regularContent'>
-            <h3>Travel to Clermont</h3>
-            <p><a href="https://www.google.co.in/maps/place/Clermont+State+Historic+Site/@42.085894,-73.9279997,15z/data=!4m2!3m1!1s0x0000000000000000:0x42b78aff009368d4" target="_blank">The Clermont Historic Site</a> is a 2 hour drive from Manhattan via the I-87 N. There is ample parking available at the wedding venue for all who are driving in. We will update this space with further details on local taxi services in case anyone needs them.</p>
-          </div>
-        </div>
-      </div>
-
-      <div role="tabpanel" class="tab-pane container col-sm-6 col-md-offset-1 fade" id='nyTodo'>
-        <div class='jumbotron'>
-          <h2>Things to do</h2>
+      <div role="tabpanel" class="tab-pane container col-md-8 fade" id="keralaTodo">
+        <div class='jumbotron col-sm-9'>
+          <h3>Things to do</h3>
           <p>Coming Soon!</p>
         </div>
       </div>
-
-      <div role="tabpanel" class="tab-pane container col-sm-6 col-md-offset-1 fade" id='keralaEvents'>
-        <div class='jumbotron'>
-          <h2>Events</h2>
-          <p>Coming Soon!</p>
+      <div role="tabpanel" class="tab-pane container col-md-8 fade" id="registry">
+        <div class='jumbotron col-sm-9'>
+          <p> We know a lot of people say this, but we are very serious in our insistence that being a part of our wedding celebration does not require a gift.</p>
+          <p>We are using the <a href="https://thkfl.com/samiandhari" target="_blank">Thankful Registry</a> for our wedding. Unlike normal registries that are tied to a particular store, Thankful lets us register for gifts from different stores. You can find our registry <a href='https://thkfl.com/samiandhari' target="_blank">here</a>.</p>
         </div>
       </div>
-
-      <div role="tabpanel" class="tab-pane container col-sm-6 fade" id='keralaTravelAndStay'>
-        <div class='jumbotron'>
-          <h2>Accomodation</h2>
-          <p>Coming Soon!</p>
-        </div>
-      </div>
-
-      <div role="tabpanel" class="tab-pane container col-sm-6 fade" id='keralaTodo'>
-        <div class='jumbotron'>
-          <h2>Things to do</h2>
-          <p>Coming Soon!</p>
-        </div>
-      </div>
-
     </div>
 
+  <script>
+    $('.sidebar-nav').affix({
+      offset: {
+        top: $('#nameDiv').height()
+      }
+    });
+  </script>
   </body>
 </html>
